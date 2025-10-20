@@ -1,0 +1,13 @@
+{
+  "configFile": ".svgrrc.cjs",
+  "outDir": "./src",
+  "icon": true,
+  "plugins": [
+    "@svgr/plugin-svgo",
+    "@svgr/plugin-jsx"
+  ],
+  "replaceAttrValues": {
+    "#10110D": "currentColor"
+  },
+  "typescript": true
+}

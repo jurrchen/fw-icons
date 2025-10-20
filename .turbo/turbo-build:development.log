@@ -1,0 +1,1 @@
+$ svgr ./src/assets -d ./src/components --icon --ext tsx --replace-attr-values "#10110D=currentColor" --silent && tsc --build ./tsconfig.json

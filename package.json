@@ -1,0 +1,32 @@
+{
+  "name": "@sourcescape/icons",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    "default": "./dist/index.js"
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "assets",
+    "dist"
+  ],
+  "scripts": {
+    "build": "svgr ./assets --silent && builder-tsup"
+  },
+  "devDependencies": {
+    "@babel/core": "7.26.10",
+    "@svgr/babel-plugin-add-jsx-attribute": "8.0.0",
+    "@svgr/cli": "8.1.0",
+    "@svgr/core": "8.1.0",
+    "@svgr/plugin-jsx": "8.1.0",
+    "@svgr/plugin-svgo": "8.1.0",
+    "typescript": "5.4.5"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
+  }
+}
