@@ -1,6 +1,6 @@
 {
   "name": "@sourcescape/icons",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "type": "module",
   "exports": {
     "default": "./dist/index.js"
@@ -15,7 +15,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "svgr ./assets --silent && builder-tsup"
+    "build": "svgr ./assets --silent && node bin/builder-tsup.cjs"
+  },
+  "bin": {
+    "builder-tsup": "./bin/builder-tsup.cjs"
   },
   "devDependencies": {
     "@babel/core": "7.26.10",
@@ -24,6 +27,10 @@
     "@svgr/core": "8.1.0",
     "@svgr/plugin-jsx": "8.1.0",
     "@svgr/plugin-svgo": "8.1.0",
+    "@types/react": "^18.0.0",
+    "dotenv": "^16.0.0",
+    "react": "^18.0.0",
+    "tsup": "^8.0.0",
     "typescript": "5.4.5"
   },
   "peerDependencies": {
